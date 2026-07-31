@@ -75,8 +75,11 @@ own descriptions, not from guesswork:
 | 2006-04-21 | War of the Rockers, the Tiki           | `Sol5Ol1tis0` |
 
 The first three predate the website; the `shows` table in the DB only starts in
-2006. Note the Apr 21 2006 entry: the site announced Stearn's Motor Inn, the
-video says the Tiki. **Both are left as written** — do not "fix" either one.
+2006. On the Apr 21 2006 entry the site says Stearn's Motor Inn and the video
+says the Tiki — these are the same place. **The Tiki was the room inside
+Stearn's Motor Inn** (confirmed by Brandon, 2026-07-31). Both names are left as
+written on their respective sources; the page explains the relationship rather
+than picking one.
 
 Use `youtube-nocookie.com` and `loading="lazy"`. Videos are not mirrored here.
 
