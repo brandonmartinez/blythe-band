@@ -1,0 +1,281 @@
+{
+ "news": [
+  {
+   "id": 1,
+   "title": "recording session ",
+   "story": "<p>today is an important step for the band, recording. today we are taking the time to put together a few of our songs. we are hoping to get <em>someone to help</em>, <em>now!</em>, and possibly <em>when we fall</em> done today. we'll keep you posted.</p>",
+   "created_at": "2006-02-17 10:34:00"
+  },
+  {
+   "id": 2,
+   "title": "site update ",
+   "story": "<p>the site has actually been updated! a design has been established, <a href=\"mailto:blythe.band@gmail.com\">what do you all think</a>? check back often for updates, it's going to be happenning a lot!</p>",
+   "created_at": "2006-02-16 17:39:00"
+  },
+  {
+   "id": 3,
+   "title": "web site update",
+   "story": "<p>even though blythe has been on the web for a short time, the progress the band has been making is incredible! currently, blythe has boughten a domain name, http://www.blythe-band.com/, and has been working to evolve the site into a thing of graphical beauty. a guestbook has been added, news feeds have been updated, music has been posted, and a picture viewer has been created. even better, blythe is constantly creating more features and adding more content for their fans and soon-to-be fans to enjoy.</p>",
+   "created_at": "2006-02-28 23:04:00"
+  },
+  {
+   "id": 4,
+   "title": "a new vocalist",
+   "story": "<p>as many of you may know, nick has taken a temporary leave of absence from the band and has headed down to florida. sadly, he won't be back until june. however, blythe may have found a possible (temporary) replacement. josh dumas, scottville, will be interviewed this next friday. check back for details.</p>",
+   "created_at": "2006-02-28 23:06:00"
+  },
+  {
+   "id": 5,
+   "title": "guestbook problems ",
+   "story": "<p>lately, due to technical difficulties, our guestbook was having a problem with some people submitting posts. please, check to make sure your post is left; it should be updated right after you post it. we have tried to correct this problem and we believe we have, but if your post is not there, please <a href=\"mailto:blythe.band@gmail.com?subject=guestprob\">e-mail</a> the band and tell us what browser you are using. thank you.</p>\r\n<p style=\"text-align: right;\">blythe</p>",
+   "created_at": "2006-03-02 09:11:00"
+  },
+  {
+   "id": 6,
+   "title": "t-shirts for sale",
+   "story": "<p>blythe t-shirts are still available! if you would like to order one, <a href=\"mailto:blythe.band@gmail.com?subject=tshirt\">contact us.</a></p>",
+   "created_at": "2006-03-02 11:19:00"
+  },
+  {
+   "id": 7,
+   "title": "thank you's ",
+   "story": "<p>blythe has started a <a href=\"thankyous.php\">thank you list</a>. they felt the need to recognize the many people who helped them along the way. check it out, maybe your name is on the list.</p>",
+   "created_at": "2006-03-03 00:37:00"
+  },
+  {
+   "id": 8,
+   "title": "general updates ",
+   "story": "<p>practice tomorrow (technically today). we'll be working on some new stuff, improving the old, and getting stuff ready for the next couple events, which include: playing at the body gallery (we're going to rock some socks), and the next battle of the bands (on april 21). as always, i'll keep everyone up-to-date and try to update this site as often as possible. thanks for keeping track!</p>",
+   "created_at": "2006-03-07 00:03:00"
+  },
+  {
+   "id": 9,
+   "title": "band update ",
+   "story": "<p>the status with dumas, now known as ollie, is very good. today we practiced and everything is going great! he's catching onto the songs very fast and even showed us one of his own (you can hear a peview of it in the <a href=\"audio.php\">audio section</a>). it's looking like ollie should work out well with the band - he brings a lot to it. also, he adds another guitar to the mix, evening out the rhythm section and backing up erik and jake's harmonies. more updates coming soon, stay posted!</p>",
+   "created_at": "2006-03-10 22:45:00"
+  },
+  {
+   "id": 10,
+   "title": "website updates (again)",
+   "story": "<p>once again the web site has gone under revision. new banners are at the top of almost every page to give you, our viewers and fans, a more graphic browsing experience. also, the <a href=\"photos.php\">photo</a> section has been updated with a good amount of pictures, and has been redone so those of you without flash can view our pictures. as always, our <a href=\"thankyous.php\">thank yous</a> page keeps growing (as many people help us out on a daily basis). a <a href=\"calendar.php\">calendar</a> section has been added to keep everyone up-to-date of when and where we are playing next, and a <a href=\"book.php\">booking page</a> has been created for those of you who want us to play at your events. the site is going under a lot of revision, so keep on checking back!</p>",
+   "created_at": "2006-03-19 12:57:00"
+  },
+  {
+   "id": 11,
+   "title": "audio!",
+   "story": "<p>alright everyone, blythe is finally getting some serious recording done. with ollie on vocals, we've been able to record two songs so far (and he's only been in the band for 3 weeks or so; not too bad) which will be put up in the <a href=\"audio.php\">audio section</a>; the two songs being <em>sth</em> and <em>now!</em>.</p>\r\n<p>also, sadly (kind of), the battle of the bands audio is being taken down. with new tracks at a higher quality being available, there is no long a need for the older, worse recordings. if, however, you are still interested in hearing an old recording, you can <a href=\"mailto:blythe.band@gmail.com\">email us</a> anytime.</p>",
+   "created_at": "2006-03-25 04:13:00"
+  }
+ ],
+ "shows": [
+  {
+   "id": 1,
+   "title": "lhs quiz bowl benefit",
+   "description": "blythe will be performing at the body gallery for an lhs quiz bowl team benefit. the show starts at 7:00pm and blythe should be playing around 8:00 or 8:30.",
+   "event_at": "2006-04-06 00:00:00"
+  },
+  {
+   "id": 2,
+   "title": "the body gallery",
+   "description": "blythe will be performing for the first time on the body gallery stage. come and check out our new vocalist and tight music. <a href=\"pdf/20060414.pdf\" target=\"blythe\">view the flyer (adobe acrobat required)</a>.",
+   "event_at": "2006-04-14 00:00:00"
+  },
+  {
+   "id": 3,
+   "title": "pioneer day",
+   "description": "a walkerville version of the harvest festival, blythe will be entertaining the crowds with their rock and roll music.",
+   "event_at": "2006-06-17 00:00:00"
+  },
+  {
+   "id": 4,
+   "title": "war of the rockers",
+   "description": "another battle of the bands, hosted in ludington for the first time! blythe can actually qualify for this one! come and check it out. it will be at the stearn's motor inn ball room!",
+   "event_at": "2006-04-21 00:00:00"
+  },
+  {
+   "id": 5,
+   "title": "battle of the bands",
+   "description": "the second annual battle of the bands at westshore community college! blythe will be playing second for those of you coming to watch.",
+   "event_at": "2006-02-04 00:00:00"
+  }
+ ],
+ "biographies": [
+  {
+   "id": 1,
+   "name": "brandon",
+   "full_name": "brandon dustin martinez",
+   "position": "bassist, media designer, producer, co-manager professional mexican",
+   "birth_date": "1988-05-31",
+   "birth_place": "ludington, mi",
+   "favorite_bands": "tool, avenged sevenfold, chevelle, nickelback, default, theory of a dead man, pillar, coheed & cambria, green day, nonpoint, the offspring, slipknot, the exies, hoobastank, the androids, van halen, rage against the machine, thousand foot krutch, [the list goes on and on...]",
+   "musical_influences": "green day, tool, rage against the machine, coheed & cambria (these are the most recent ones, everything gives inspiration at some degree)",
+   "more_information": "after joining the band in january, 2005, brandon has worked hard and long to make his contribution to the band. currently, besides playing bass for the band, he is trying to maintain any related media aspect - logos, designs, and even this web site. along with jacob, he helps manage and produce the band's music."
+  },
+  {
+   "id": 2,
+   "name": "erik",
+   "full_name": "erik jordan hartley",
+   "position": "lead &amp; rhythm guitar",
+   "birth_date": "2006-01-01",
+   "birth_place": "",
+   "favorite_bands": "",
+   "musical_influences": "",
+   "more_information": ""
+  },
+  {
+   "id": 3,
+   "name": "jake",
+   "full_name": "jacob harvey redman",
+   "position": "lead &amp; rhythm guitar",
+   "birth_date": "2006-01-01",
+   "birth_place": "",
+   "favorite_bands": "",
+   "musical_influences": "",
+   "more_information": ""
+  },
+  {
+   "id": 4,
+   "name": "josh",
+   "full_name": "joshua lyle mogerman",
+   "position": "drums",
+   "birth_date": "2006-01-01",
+   "birth_place": "",
+   "favorite_bands": "",
+   "musical_influences": "",
+   "more_information": ""
+  },
+  {
+   "id": 5,
+   "name": "ollie",
+   "full_name": "joshua ollie dumas",
+   "position": "lead vocals, rhythm guitar",
+   "birth_date": "0000-00-00",
+   "birth_place": "",
+   "favorite_bands": "",
+   "musical_influences": "",
+   "more_information": ""
+  }
+ ],
+ "audios": [
+  {
+   "id": 1,
+   "title": "heartback",
+   "track": 1,
+   "album": "the black e.p.",
+   "file_name": "01-heartback.mp3"
+  },
+  {
+   "id": 2,
+   "title": "egotistic lover",
+   "track": 2,
+   "album": "the black e.p.",
+   "file_name": "02-egotistic_lover.mp3"
+  },
+  {
+   "id": 3,
+   "title": "sth",
+   "track": 3,
+   "album": "the black e.p.",
+   "file_name": "03-sth.mp3"
+  },
+  {
+   "id": 4,
+   "title": "now!",
+   "track": 4,
+   "album": "the black e.p.",
+   "file_name": "04-now.mp3"
+  }
+ ],
+ "photos": [
+  {
+   "id": 1,
+   "title": "001",
+   "group_name": "BotB (Feb 4, 2006)",
+   "comment": "Another Full Band Picture"
+  },
+  {
+   "id": 2,
+   "title": "001",
+   "group_name": "BotB (Feb 5, 2005)",
+   "comment": "Our very first battle of the bands! We look so young!"
+  },
+  {
+   "id": 3,
+   "title": "Erik Shredding It Up",
+   "group_name": "BotB (Feb 4, 2006)",
+   "comment": "Erik's such a crazy guy!"
+  },
+  {
+   "id": 5,
+   "title": "\"blythe\"",
+   "group_name": "Fan Art",
+   "comment": "Posted by Ariel Martinez"
+  }
+ ],
+ "thank_yous": [
+  {
+   "id": 1,
+   "person": "God",
+   "reason": "let's face it, we wouldn't be here without Him. He has given us the strength to keep moving and to prosper like no other force in this world. thank you. thank you.</li>"
+  },
+  {
+   "id": 2,
+   "person": "our families",
+   "reason": "some of our biggest supporters out there are our own flesh and blood. they've had to sit through the hours of hearing us practice at home, stand by our sides through thick and thin, and help us out whenever we truly needed it."
+  },
+  {
+   "id": 3,
+   "person": "our friends",
+   "reason": "our supporters, our followers, our head bangers. thank you to all that have sat through since the beginning, and thank you for those that are coming to join our crowd of musical bliss."
+  },
+  {
+   "id": 4,
+   "person": "prayer & praise of ludington",
+   "reason": "the central hub of our band practice, prayer & praise has kindly allowed us to jam and wreak havoc in their facility, giving our band an ideal place to practice. thank you everyone!"
+  },
+  {
+   "id": 5,
+   "person": "kyle mathews",
+   "reason": "without him, this web site may not exist right now. he graciously has allowed the band to park their web site on his server space and allow their domain to direct to his servers. thank you, kyle!"
+  },
+  {
+   "id": 6,
+   "person": "adam james",
+   "reason": "thanks for letting us use your equipment. you've made erik's sound that much better. also, thank you for the numerous times of filming us."
+  },
+  {
+   "id": 7,
+   "person": "mr lacombe",
+   "reason": "a large thanks for letting us use the resources you provided us. thank you for the ability to print the many flyers, shirts, and other materials for the band. you truly are a great supporter! graphic arts rocks!"
+  },
+  {
+   "id": 8,
+   "person": "john redman",
+   "reason": "if ever there was a greater supporter to us, we don't know who it would be. he was at every show, screaming and cheering for his favorite christian rock band in the world. not only has he given us his never-ending rock support, but he also helped us with some finances. this is not only a thank you, but a dedication - we love you, and you'll always be in our hearts, strings, and sticks. <em>in remembrance, 2006.</em>"
+  }
+ ],
+ "blogs": [
+  {
+   "id": 1,
+   "title": "First Blog Entry",
+   "story": "So, blythe finally has it's own web log (blog). This is great because we can finally all let our fans know what it is going on in our lives as a band and personally. Sure, the news information would keep you up to date with some of the things going on, and the shows section would tell you when something was going to happen, but this blog will tell you <em>why</em>, <em>how</em>, and any dirt that goes with it.",
+   "posted_by": "brandon",
+   "created_at": "2006-04-16 01:31:00"
+  },
+  {
+   "id": 2,
+   "title": "Last Night's Show",
+   "story": "Last night was amazing! We thought that our show would go down the tubes, with the schedule being all messed up and all; however, we were surprised but the number of loyal fans that we had! We were setting up on stage, turn around, and there are around 50 people waiting for us to play. 50 may not seem like a big number, but it is when the whole nights was barren before that. Wow, I can't believe it went that well.",
+   "posted_by": "brandon",
+   "created_at": "2006-04-16 01:35:51"
+  }
+ ],
+ "links": [
+  {
+   "id": 1,
+   "title": "foreverest",
+   "uri": "http://www.myspace.com/foreverest",
+   "description": "Formed with the intention of combining diverse stylistic influences, youthful energy and a general love for all things music, Foreverest wants to play for YOU in 2005 and beyond."
+  }
+ ]
+}

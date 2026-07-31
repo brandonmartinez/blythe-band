@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-header: #3e372f;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .section-h {
+    @apply font-serif text-3xl lowercase text-stone-100;
+  }
+  .prose-archive {
+    @apply text-sm leading-relaxed text-stone-400;
+  }
+  .prose-archive p + p {
+    @apply mt-3;
+  }
+  .prose-archive em {
+    @apply not-italic text-stone-300;
+  }
+  audio {
+    @apply rounded;
+  }
+}
