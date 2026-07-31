@@ -34,9 +34,24 @@ generated from it once and is hand-editable now.
 - **The guestbook.** 45 entries, each carrying a real email address. Not
   republished.
 - **The `users` table.** SHA-1 password hashes for the band's admin logins.
+- **Middle names.** The `bios` table stored each member's full legal name
+  (e.g. "joshua ollie dumas"). The site publishes **first and last name only**.
+  These are living people and this repo is public. Do not restore middle names,
+  even though they are in `data/production-export.json`.
 - Any third-party contact detail.
 
 Keep it that way.
+
+## The one non-blythe track
+
+`src/audio/when-youre-no-where-youre-now-here.mp3` is **not a blythe song** — it
+is a solo recording by **Joshua Dumas**, who joined blythe in 2006. The file
+sat misfiled in the Lost in Sanity Logic archive for twenty years and was
+briefly published on lostinsanity.net before the misattribution was caught.
+
+It is hosted here, in its own boxed-off block at the end of the music section,
+explicitly labelled "not a blythe song" and credited to him. Do not fold it into
+the black e.p. track list and do not drop the credit line.
 
 ## Build
 
