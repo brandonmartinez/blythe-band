@@ -26,7 +26,58 @@
   .prose-archive em {
     @apply not-italic text-stone-300;
   }
-  audio {
-    @apply rounded;
+
+  /* ── player ─────────────────────────────────────────────────────────
+     Resting colors live here, not as utilities in the markup. In
+     Tailwind v4 a utility beats @layer components no matter the
+     selector, so `text-stone-100` on the element would silently defeat
+     `.track.is-active .track-title`. */
+  .track-btn {
+    @apply grid h-9 w-9 shrink-0 place-items-center rounded-full border border-stone-700 text-stone-400 transition;
+  }
+  .track-btn:hover {
+    @apply border-amber-500 bg-amber-500 text-stone-950;
+  }
+  .track.is-active .track-btn {
+    @apply border-amber-500 bg-amber-500 text-stone-950;
+  }
+  .track-title {
+    @apply font-serif text-lg lowercase text-stone-100;
+  }
+  .track.is-active .track-title {
+    @apply text-amber-500;
+  }
+  .track-seek {
+    @apply h-0.5 w-full overflow-hidden rounded bg-stone-800;
+  }
+  .track-fill {
+    @apply h-full w-0 rounded bg-amber-500;
+  }
+  .track-elapsed {
+    @apply text-stone-600;
+  }
+  .pl-btn {
+    @apply grid h-9 w-9 shrink-0 place-items-center rounded-full text-stone-400 transition hover:bg-stone-800 hover:text-stone-100;
+  }
+  .pl-btn-main {
+    @apply h-11 w-11 bg-amber-500 text-stone-950 hover:bg-amber-500 hover:text-stone-950;
+  }
+  .seek {
+    --pct: 0%;
+    @apply h-1 w-full cursor-pointer appearance-none rounded-full bg-stone-800;
+    background-image: linear-gradient(
+      to right,
+      var(--color-amber-500) var(--pct),
+      transparent var(--pct)
+    );
+  }
+  .seek::-webkit-slider-thumb {
+    @apply h-3 w-3 appearance-none rounded-full bg-amber-500;
+  }
+  .seek::-moz-range-thumb {
+    @apply h-3 w-3 appearance-none rounded-full border-0 bg-amber-500;
+  }
+  body.has-player {
+    @apply pb-24;
   }
 }

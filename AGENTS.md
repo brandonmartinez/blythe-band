@@ -17,17 +17,18 @@ If you need to add something the band didn't write, mark it clearly as such.
 
 ## Provenance
 
-| Thing                     | Source                                                              |
-| ------------------------- | ------------------------------------------------------------------- |
-| News, shows, bios, audio metadata, thank yous, blog | `db/production.sql` from the deployed Rails app |
-| the black e.p. MP3s       | `public/mp3/0{1..4}-*.mp3` from the deployed app (2006 96 kbps encodes, unmodified) |
-| the e.p. MP3s             | `/Volumes/Audio/Logic/Archives/blythe/Mixdowns/*.wav`, dated 2007-06-26 — converted to LAME V2 in 2026, otherwise untouched |
-| Cover art                 | `Artwork/CD Covers/ep - 001.jpg` and `The EP.jpg`, resized to 800px  |
-| Flyer PDF                 | `public/pdf/20060414.pdf` from the deployed app                      |
-| Show video                | 5 YouTube embeds, uploaded 2018-10-15 from two DVDs burned in 2005–06 |
-| Photos                    | `public/pictures/` — full size plus `_t` thumbnails                 |
-| Header art, logo          | `public/images/top.jpg`, `logo.psd` (flattened to PNG)               |
-| Domain dates              | GoDaddy receipts — registered ~Feb 2006, cancelled 2008-02-09        |
+| Thing                                               | Source                                                                                                                      |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| News, shows, bios, audio metadata, thank yous, blog | `db/production.sql` from the deployed Rails app                                                                             |
+| the black e.p. MP3s                                 | `public/mp3/0{1..4}-*.mp3` from the deployed app (2006 96 kbps encodes, unmodified)                                         |
+| the e.p. MP3s                                       | `/Volumes/Audio/Logic/Archives/blythe/Mixdowns/*.wav`, dated 2007-06-26 — converted to LAME V2 in 2026, otherwise untouched |
+| Audio hosting                                       | Azure Blob, container `blythe` on `martinezmediaclients` — nothing audio ships in this repo (see "Audio & the player")      |
+| Cover art                                           | `Artwork/CD Covers/ep - 001.jpg` and `The EP.jpg`, resized to 800px                                                         |
+| Flyer PDF                                           | `public/pdf/20060414.pdf` from the deployed app                                                                             |
+| Show video                                          | 5 YouTube embeds, uploaded 2018-10-15 from two DVDs burned in 2005–06                                                       |
+| Photos                                              | `public/pictures/` — full size plus `_t` thumbnails                                                                         |
+| Header art, logo                                    | `public/images/top.jpg`, `logo.psd` (flattened to PNG)                                                                      |
+| Domain dates                                        | GoDaddy receipts — registered ~Feb 2006, cancelled 2008-02-09                                                               |
 
 `data/production-export.json` is the parsed export, kept for provenance. It is
 **not** read at build time — `src/index.html` is a normal static file that was
@@ -74,8 +75,7 @@ own descriptions, not from guesswork:
 | 2006-02-04 | Battle of the Bands, WSCC (2nd annual) | `duA4Nlm2S7Q` |
 | 2006-04-21 | War of the Rockers, the Tiki           | `Sol5Ol1tis0` |
 
-The first three predate the website; the `shows` table in the DB only starts in
-2006. On the Apr 21 2006 entry the site says Stearn's Motor Inn and the video
+The first three predate the website; the `shows` table in the DB only starts in 2006. On the Apr 21 2006 entry the site says Stearn's Motor Inn and the video
 says the Tiki — these are the same place. **The Tiki was the room inside
 Stearn's Motor Inn** (confirmed by Brandon, 2026-07-31). Both names are left as
 written on their respective sources; the page explains the relationship rather
@@ -94,12 +94,21 @@ primary sources and are quoted on the page as blockquotes with citations:
 - **2006-02-04** — westshore.edu events listing, Wayback `20060205014049`:
   "February 4 - Battle of the Bands, 7-11pm, Recreation Center Arena".
 
-The **2005-07-27 Mason County Fairgrounds** date has no external record. What is
-known: the video names the *venue*, not the event; the Western Michigan Fair
-(the fair held at those grounds) runs in **early August**, so this was probably
-not a fair date, but Brandon does not remember whether it was connected to the
-fair or simply booked there — the page says so rather than picking. Supporting
-but not conclusive: blythe-tagged photos from the Photos library show a late
+- **2005-07-27** — the video names only the venue, but two 2005 sources put the
+  **Western Michigan Fair** at those grounds across that date, so the show fell
+  during the fair. The Ludington CVB calendar (Wayback `20050406045929`) says
+  "July 26 - July 30"; the Michigan Association of Fairs and Exhibitions
+  (Wayback `20050217065857`) says "7/23/2005 - 7/30/2005". They disagree on the
+  opening day, agree on the close, and carry the same phone numbers. Both are
+  quoted on the page and the disagreement is shown, not resolved.
+
+**A correction worth not repeating:** an earlier pass concluded the fair "runs in
+early August" from 2014–2026 records and nearly published that. It was true for
+that era only — the fair ran **late July** in 2005 and 2006 (MAFE lists
+7/23/2006 - 7/29/2006) and moved later sometime after. Do not infer a recurring
+event's date in one decade from another decade.
+
+Supporting but not conclusive: blythe-tagged photos from the Photos library show a late
 practice at Prayer & Praise running 23:07 on Jul 26 to 00:08 on Jul 27, which
 Brandon identifies as rehearsal for this event with extra players sitting in.
 
@@ -122,14 +131,66 @@ allowlist only for markup you have actually seen in the dump.
 
 ## The one non-blythe track
 
-`src/audio/when-youre-no-where-youre-now-here.mp3` is **not a blythe song** — it
-is a solo recording by **Joshua Dumas**, who joined blythe in 2006. The file
-sat misfiled in the Lost in Sanity Logic archive for twenty years and was
-briefly published on lostinsanity.net before the misattribution was caught.
+`solo/when-youre-no-where-youre-now-here.mp3` in the blob container is **not a
+blythe song** — it is a solo recording by **Joshua Dumas**, who joined blythe in 2006. The file sat misfiled in the Lost in Sanity Logic archive for twenty years
+and was briefly published on lostinsanity.net before the misattribution was
+caught.
 
 It is hosted here, in its own boxed-off block at the end of the music section,
 explicitly labelled "not a blythe song" and credited to him. Do not fold it into
 the black e.p. track list and do not drop the credit line.
+
+## Audio & the player
+
+**No audio ships in this repo.** All nine MP3s live in public Azure Blob
+Storage and are referenced by absolute URL:
+
+```
+https://martinezmediaclients.blob.core.windows.net/blythe/albums/2006-the-black-ep/*.mp3
+https://martinezmediaclients.blob.core.windows.net/blythe/albums/2007-the-ep/*.mp3
+https://martinezmediaclients.blob.core.windows.net/blythe/solo/*.mp3
+```
+
+Container `blythe` on the `martinezmediaclients` account, anonymous access set
+to **Blob** — never Container, which would let anyone enumerate the archive. The
+staging tree that was uploaded is
+`~/src/_archive/_staging/blythe-audio/` (see its README for per-file
+provenance). Plain `<audio src>` playback is cross-origin but needs **no CORS
+headers**; only `crossorigin` or the Web Audio API would.
+
+Verify every URL after a change:
+
+```sh
+grep -o 'https://martinezmediaclients[^"]*' src/index.html | sort -u \
+  | xargs -I{} sh -c 'printf "%s %s\n" "$(curl -s -o /dev/null -w "%{http_code} %{content_type}" {})" {}'
+```
+
+### The markup contract
+
+`src/player.js` is vanilla, dependency-free, and reads **all** its state from
+the DOM. There is one shared `new Audio()` — never one element per track.
+
+- A track is any element matching `.track[data-src]`, carrying `data-src`,
+  `data-title`, and `data-seconds`.
+- `data-seconds` mirrors the printed duration so the bar reads correctly before
+  metadata loads. Keep the two in sync.
+- Each track needs a `.track-btn` (containing `.i-play` and `.i-pause` SVGs),
+  a `.track-title`, a `.track-seek` > `.track-fill`, and a `.track-elapsed`.
+- Playlists are scoped by the nearest `[data-playlist]` ancestor, labelled with
+  `data-record`. Auto-advance, prev, and next stay **inside one record** — the
+  black e.p. does not roll into the e.p. `closest()` matches the element
+  itself, which is how the single Dumas track gets its own one-item playlist.
+- `body.has-player` adds bottom padding so the fixed bar never covers content.
+- Prev/next are `hidden sm:grid` so the scrubber keeps room at 390px.
+
+### Tailwind v4 trap — read before restyling
+
+In v4, **utilities beat `@layer components` regardless of selector
+specificity.** A `text-stone-100` utility on an `<h3 class="track-title">` will
+silently defeat `.track.is-active .track-title { @apply text-amber-500; }`, with
+no error and no visible cause. That is why `.track-title` sets its _resting_
+font, size, case, and color in the component layer and the markup carries no
+color utility. Do not "fix" this with `!important` — remove the utility.
 
 ## Build
 
@@ -153,8 +214,9 @@ npm run build   # emits _site/
   no `tailwind.config.js`. Customization goes in `@theme`. Don't reintroduce v3's
   `@tailwind base/components/utilities` + `content` glob.
 - `CNAME` is load-bearing and is copied into `_site/` by the build.
-- **The page must work without JavaScript.** There is none today; keep it that
-  way. Audio uses the native `<audio>` element.
+- `src/player.js` is the only JavaScript. Everything except audio playback —
+  every word, image, show, and link — still works with JS disabled; keep it that
+  way.
 
 ## Deploying
 
