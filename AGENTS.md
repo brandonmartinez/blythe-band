@@ -83,6 +83,34 @@ than picking one.
 
 Use `youtube-nocookie.com` and `loading="lazy"`. Videos are not mirrored here.
 
+### Dates: what is sourced vs. what is testimony
+
+Each video's description carries its own recording date. Two are confirmed by
+primary sources and are quoted on the page as blockquotes with citations:
+
+- **2005-02-05** — westshore.edu homepage, Wayback `20050204052604`: a press
+  release ("at least nine area teen 'garage-style' bands... Sat. Feb. 5, from
+  7-11 p.m. ... part of WSCC's 20th Anniversary") plus the events listing.
+- **2006-02-04** — westshore.edu events listing, Wayback `20060205014049`:
+  "February 4 - Battle of the Bands, 7-11pm, Recreation Center Arena".
+
+The **2005-07-27 Mason County Fairgrounds** date has no external record. What is
+known: the video names the *venue*, not the event; the Western Michigan Fair
+(the fair held at those grounds) runs in **early August**, so this was probably
+not a fair date, but Brandon does not remember whether it was connected to the
+fair or simply booked there — the page says so rather than picking. Supporting
+but not conclusive: blythe-tagged photos from the Photos library show a late
+practice at Prayer & Praise running 23:07 on Jul 26 to 00:08 on Jul 27, which
+Brandon identifies as rehearsal for this event with extra players sitting in.
+
+Photo timestamps are trustworthy — blythe-tagged photos land on 2005-02-05 and
+2006-02-04 matching the confirmed shows, and 193 of them on 2006-04-14 matching
+the flyer PDF in `src/pdf/`.
+
+**Do not add a date to the page that is not either in a video description, in
+the DB, or externally sourced.** Where sources disagree or run out, say so on
+the page.
+
 ## Inline HTML in DB body text
 
 Two records carry real HTML inside their text: the Apr 14 2006 show links the
