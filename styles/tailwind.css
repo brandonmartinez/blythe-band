@@ -80,4 +80,20 @@
   body.has-player {
     @apply pb-24;
   }
+
+  /* ── lightbox ───────────────────────────────────────────────────────
+     Position is set per-button in the markup; this only carries the
+     shared shape and resting color. */
+  .lb-nav {
+    @apply absolute grid h-10 w-10 place-items-center rounded-full bg-stone-900/80 text-stone-300 transition;
+  }
+  .lb-nav:hover {
+    @apply bg-amber-500 text-stone-950;
+  }
+  .lb-nav[disabled] {
+    @apply pointer-events-none opacity-0;
+  }
+  body.lightbox-open {
+    @apply overflow-hidden;
+  }
 }

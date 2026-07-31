@@ -151,6 +151,7 @@
 
   document.addEventListener('keydown', (e) => {
     if (!current) return;
+    if (document.body.classList.contains('lightbox-open')) return;
     const tag = (e.target.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) return;
     if (e.code === 'Space') {
