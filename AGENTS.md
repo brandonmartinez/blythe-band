@@ -91,8 +91,19 @@ primary sources and are quoted on the page as blockquotes with citations:
 - **2005-02-05** — westshore.edu homepage, Wayback `20050204052604`: a press
   release ("at least nine area teen 'garage-style' bands... Sat. Feb. 5, from
   7-11 p.m. ... part of WSCC's 20th Anniversary") plus the events listing.
-- **2006-02-04** — westshore.edu events listing, Wayback `20060205014049`:
-  "February 4 - Battle of the Bands, 7-11pm, Recreation Center Arena".
+- **2006-02-04** — a full WSCC press release, dated 12/19/2005, at
+  `news/newsrelease.asp?id=107`, Wayback `20060117133859`: "'Battle of the
+  Bands' will bring together ten different area teen bands... Sat., Feb. 4, from
+  7-11:00 p.m., in the WSCC Recreational Center gymnasium... part of WSCC's
+  2005-2006 Cultural Arts Series." It names Dr. Rick Plummer as director of the
+  series, Mark Sandstedt as emcee, the $100/$50/$25 prizes, the $3 door, and
+  `ludingtonrock@gmail.com` / 231-852-0952 as the band-application contact with
+  a Jan 20 deadline. It does **not** name the competing bands, so unlike 2005
+  there is no outside record of the lineup. Corroborated by the homepage events
+  column, unchanged across Wayback `20060129020114` and `20060205014049`:
+  "February 4 - Battle of the Bands, 7-11pm, Recreation Center Arena, ext. 3318
+  for information". (An earlier pass cited only that one line; the press release
+  was found 2026-07-31 and is the better source. Do not downgrade back.)
 
 - **2005-07-27** — the video names only the venue, but two 2005 sources put the
   **Western Michigan Fair** at those grounds across that date, so the show fell
@@ -195,6 +206,41 @@ June or July 2005, which is why the beach show has no paper trail here.
 **The remaining path for June 15 2005 is LDN microfilm at the Mason County
 District Library.** Do not re-run the Wayback sweep; it has been done.
 
+### Everything else that was swept and came back empty (2026-07-31)
+
+A second, wider sweep found the WSCC press release above and **nothing else**.
+Do not re-run any of these:
+
+- **westshore.edu** — news release IDs 104–121 were enumerated; only 107 is the
+  BOTB. IDs 108–109, 116 and 120 were never captured at all. `news/nrarchive.asp`
+  renders a title and no content; `home.php/calendars` renders a blurb and no
+  calendar; `media/docs/update.pdf` ("West Shore Update", linked from every 2006
+  homepage) was never archived; the 2006 board-minutes PDFs are in CDX but not
+  publicly served; the Cultural Arts pages only survive from June 2006.
+- **Ludington Daily News** — `category_id=11` (Feb 7–11 2006) and `category_id=14`
+  render as URL strings only. Entertainment (`29`) has no captures in Jan–Feb 2006.
+- **Radio** — wmom.fm has no news pages archived from Feb 2006 and its
+  `appearances.htm` covers only Mar 2005; wkla.com's calendar has no Feb 2006
+  captures at all (earliest is Mar 16 2006, and those are metadata-only).
+- **Regional papers** — mlive.com has no Ludington/Mason County content in CDX
+  for 2005–2006; news-advocate.com and oceanaherald.com are effectively
+  unarchived; manistee.com is a tourism directory.
+- **Civic** — pureludington.com has zero captures Jun 2005 → mid-2007;
+  masoncounty.net, ludington.org, mcdl.info and ludingtonjaycees.org (which was
+  SEO-spammed by 2005) have no usable event content.
+- **Fairs** — masoncountyfair.com is robots.txt only; westernmichiganfair.com is
+  not in Wayback.
+- **Music platforms & present-day web** — no purevolume or MySpace captures for
+  blythe; search engines return nothing for "blythe band ludington", the WSCC
+  battle, "Debra Bethell-Romer", "Mark Sandstedt", or `ludingtonrock@gmail.com`.
+
+Remaining offline-only leads, in rough order of promise: LDN microfilm at MCDL
+(the week of Feb 6–12 2006 would carry results and names); WSCC's own "West
+Shore Update" and "Shore Lines" alumni newsletter, via College Relations; the
+Feb 13 2006 WSCC board minutes; Mark Sandstedt / MS Creative Services; whoever
+was behind `ludingtonrock@gmail.com`; Ludington High School yearbooks 2005–06;
+Mason County Fair Association program booklets for 2005.
+
 ## Inline HTML in DB body text
 
 Two records carry real HTML inside their text: the Apr 14 2006 show links the
@@ -214,6 +260,14 @@ caught.
 It is hosted here, in its own boxed-off block at the end of the music section,
 explicitly labelled "not a blythe song" and credited to him. Do not fold it into
 the black e.p. track list and do not drop the credit line.
+
+**It is not the song from the March 10, 2006 news post.** An earlier pass tied
+the two together — the post says Dumas "even showed us one of his own (you can
+hear a peview of it in the audio section)" — but that preview is not in the
+`audios` table and did not survive. Brandon's recollection (2026-07-31) is that
+the song he played for the band was **_egotistic lover_**, which blythe went on
+to record for the black e.p.; this file is a separate submission of his. The
+page now says that, hedged as recollection. Do not re-assert the news-post link.
 
 ## Audio & the player
 
