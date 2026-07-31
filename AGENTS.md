@@ -102,6 +102,28 @@ primary sources and are quoted on the page as blockquotes with citations:
   opening day, agree on the close, and carry the same phone numbers. Both are
   quoted on the page and the disagreement is shown, not resolved.
 
+- **2005-06-15** — **unverified, and a plausible lead was checked and ruled
+  out.** The video says only "Ludington Beach / Recorded June 15th, 2005." That
+  date was a **Wednesday**, and the Ludington Area Jaycees ran a Wednesday
+  7:00 PM "Concert in the Park" series all summer 2005 — so the two look like a
+  match. They are not. The Jaycees series was held at **Waterfront Park
+  Amphitheater**, downtown on Pere Marquette Lake, which the Jaycees' own site
+  states in its masthead every year it survives ("Waterfront Park Concerts
+  Series," Wayback `20020808194746`, `20030417011533`, `20040219195402`,
+  `20040611062436`). The beach at the west end of Ludington Avenue is **Stearns
+  Park**, on Lake Michigan — a different place. The CVB confirms Stearns Park is
+  the Lake Michigan beach ("Freedom Festival Fireworks @ Stearns Park —
+  fireworks begin at dusk over Lake Michigan," `20050406045929`).
+
+  Two further notes for anyone tempted to reopen this. The 2005 CVB lists every
+  Jaycees concert as "@ To Be Announced" — unlike 2004, which named Waterfront
+  Park outright — so the venue was genuinely unstated that season. And Stearns
+  Park did host its own concert series, the "Rainbow Gardens Redoux," but on
+  **Fridays** at 8 PM and only in 2003. Neither closes the gap. No third-party
+  record of a June 15 2005 Battle of the Bands has been found in the CVB
+  calendar, the Jaycees site, or the DB. **The only source for this show is
+  Brandon's own video description**, and the page must not imply otherwise.
+
 **A correction worth not repeating:** an earlier pass concluded the fair "runs in
 early August" from 2014–2026 records and nearly published that. It was true for
 that era only — the fair ran **late July** in 2005 and 2006 (MAFE lists
