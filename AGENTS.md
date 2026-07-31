@@ -124,6 +124,30 @@ primary sources and are quoted on the page as blockquotes with citations:
   calendar, the Jaycees site, or the DB. **The only source for this show is
   Brandon's own video description**, and the page must not imply otherwise.
 
+- **2006-04-21** — **confirmed by the Ludington Daily News**, the only show the
+  local paper is known to have covered. Its front page on Monday Apr 24 2006
+  carried a photo captioned: _"Debra Bethell-Romer sings 'Stay with me' during
+  Friday night's Battle of the Rockers at the Tiki. Tiki owner Randy Bowden
+  donated the use of the club for the Battle of the Rockers to raise money for
+  Ludington's new skate plaza, to be built north of the Jaycee Mini Golf at
+  Stearns Park."_ (Wayback `20060424065913`, photo by Andy Klevorn — the
+  photograph itself was not archived.) April 21 2006 was a Friday. The paper
+  says **Battle** of the Rockers; the band said **war** of the rockers. Both are
+  kept as written.
+
+  This also supplies the fact the band's own site never recorded: **the night
+  was a skate-park benefit.** A second LDN item four months later shows the same
+  room and the same campaign — _"Local bands will play an all ages show Sunday
+  night to raise money for the proposed Ludington Skate Plaza. The concert will
+  be at the Tiki Lounge 6 p.m."_ (Wayback `20060822040753`).
+
+  The venue naming is now settled by the venue itself. `stearnsmotorinn.com`
+  had a page titled **"Tiki Lounge & Nightclub"** — _"Ludington's premiere
+  nightclub… Wednesday is Teen Night! Under 21 welcome. No alcohol.
+  Smoke-free."_ (Wayback `20030804103821`). That is how a band of high
+  schoolers came to play a nightclub, and it independently confirms Brandon's
+  testimony that the Tiki was the room inside Stearn's.
+
 **A correction worth not repeating:** an earlier pass concluded the fair "runs in
 early August" from 2014–2026 records and nearly published that. It was true for
 that era only — the fair ran **late July** in 2005 and 2006 (MAFE lists
@@ -141,6 +165,35 @@ the flyer PDF in `src/pdf/`.
 **Do not add a date to the page that is not either in a video description, in
 the DB, or externally sourced.** Where sources disagree or run out, say so on
 the page.
+
+### The Ludington Daily News: what is reachable and what is not
+
+The paper is **not** in Newspapers.com or NewspaperArchive.com (both resolve to
+nothing for Ludington), and 2005–2006 is far outside the scope of Chronicling
+America and CMU's Digital Michigan Newspapers. The Mason County District
+Library's own database list from Feb 2005 does not include it.
+
+Its website _is_ in Wayback, but it was paywalled: _"Articles appearing in the
+Ludington Daily News are posted and available for viewing online free of charge
+for one week."_ Individual `news.php?story_id=` pages were never archived — only
+the section pages and the homepage, which carry headlines plus a
+sentence or two of each story. That is enough to search, and it is how the
+Apr 24 2006 caption above was found.
+
+Coverage of the relevant windows, checked exhaustively:
+
+| Window              | LDN captures        | Result                          |
+| ------------------- | ------------------- | ------------------------------- |
+| Feb 2005 (WSCC #1)  | homepage only       | nothing                         |
+| **Jun–Jul 2005**    | **homepage only**   | **nothing — no section crawls** |
+| Feb 2006 (WSCC #2)  | homepage + Feb 7–11 | nothing                         |
+| **Apr 2006 (Tiki)** | homepage + 66 pages | **hit — see above**             |
+
+Entertainment is `category_id=29`; Top News is `3`. Sections were reachable as
+`news.php?viewdate=YYYY-MM-DD&category_id=N`. Entertainment was never crawled in
+June or July 2005, which is why the beach show has no paper trail here.
+**The remaining path for June 15 2005 is LDN microfilm at the Mason County
+District Library.** Do not re-run the Wayback sweep; it has been done.
 
 ## Inline HTML in DB body text
 
@@ -214,6 +267,30 @@ no error and no visible cause. That is why `.track-title` sets its _resting_
 font, size, case, and color in the component layer and the markup carries no
 color utility. Do not "fix" this with `!important` — remove the utility.
 
+## The photo lightbox
+
+`src/lightbox.js` upgrades the `#photos` grid in place. It is progressive
+enhancement, not a replacement: the markup stays a list of ordinary
+`<a href="photos/N.jpg">` links wrapping the `_t` thumbnails, and with JS off
+(or on a cmd/ctrl/shift/alt-click) the browser just opens the full image.
+
+- The gallery is any `[data-lightbox]` container; its `a[href]` children become
+  the sequence, in DOM order. Adding a photo means adding a link — nothing in
+  the JS is a list of filenames.
+- Alt text is read off the thumbnail, so the two never drift.
+- Overlay is `#lightbox` (`z-60`, above the `z-50` player bar) with `#lb-img`,
+  `#lb-prev`, `#lb-next`, `#lb-close`, `#lb-count`.
+- Navigation does **not** wrap; the end buttons go `[disabled]`, which
+  `.lb-nav[disabled]` renders as `pointer-events-none opacity-0`.
+- Esc / arrows / Home / End / swipe all work, Tab is trapped in the three
+  buttons, and closing returns focus to the thumbnail you were last viewing.
+  `player.js` ignores its own keyboard shortcuts while `body.lightbox-open` is
+  set, so arrows don't scrub audio behind the overlay.
+- The photos are 500px originals. They are shown at native size, never upscaled
+  — a full-bleed lightbox would just be a blurry 2006 JPEG.
+- `.lb-nav` carries only shape and resting color; each button's position lives
+  in the markup (bottom bar at mobile, screen sides at `sm:`).
+
 ## Build
 
 Static HTML + Tailwind v4, compiled by a local CLI build, published to GitHub
@@ -236,9 +313,12 @@ npm run build   # emits _site/
   no `tailwind.config.js`. Customization goes in `@theme`. Don't reintroduce v3's
   `@tailwind base/components/utilities` + `content` glob.
 - `CNAME` is load-bearing and is copied into `_site/` by the build.
-- `src/player.js` is the only JavaScript. Everything except audio playback —
-  every word, image, show, and link — still works with JS disabled; keep it that
-  way.
+- `src/player.js` and `src/lightbox.js` are the only JavaScript, both vanilla
+  and dependency-free. Everything except audio playback — every word, image,
+  show, and link — still works with JS disabled; keep it that way. The photo
+  grid is plain `<a href="photos/N.jpg">`; `lightbox.js` intercepts the click
+  only for unmodified left-clicks, so JS-off and cmd-click still open the full
+  image directly.
 
 ## Deploying
 
